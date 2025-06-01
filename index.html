@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <h1>Tic-Tac-Toe Game</h1>
+        <p>Welcome to the Tic-Tac-Toe game! Click the button below to start playing.</p>
+        <div style="display: flex; align-items: center; gap: 0.5em;">
+            <span class="start-msg">Press me to start the game <b style="font-size:1.2em;">&#8594;</b></span>
+            <button class="top-btn" onclick="startGame()">Start Game</button>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button class="reset-btn" onclick="resetGame()">Reset</button>
+        <!-- Winner Popup Modal -->
+        <div id="winner-popup" class="popup" style="display:none;">
+            <div class="popup-content">
+                <span id="winner-message"></span>
+                <button id="new-game-btn" onclick="startGame()">New Game</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
